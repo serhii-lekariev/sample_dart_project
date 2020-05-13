@@ -1,0 +1,13 @@
+os: windows
+language: dart
+dart:
+  - stable
+
+before-install:
+  - git clone https://github.com/flutter/flutter.git -b stable
+  - flutter channel master
+  - flutter upgrade
+  - flutter config --enable-windows-desktop
+
+script:
+  - flutter build windows
