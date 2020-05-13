@@ -3,12 +3,11 @@ language: dart
 dart:
   - stable
 
+intsall:
+  - PowerShell -Command 'Set-ExecutionPolicy -ExecutionPolicy RemoteSigned'
+
 before-install:
   - git clone https://github.com/flutter/flutter.git -b stable
-  - ./flutter/bin/flutter doctor
-  - ./flutter/bin/flutter channel master
-  - ./flutter/bin/flutter upgrade
-  - ./flutter/bin/flutter config --enable-windows-desktop
 
 script:
-  - ./flutter/bin/flutter build windows
+  - PowerShell -File install-flutter.ps1
