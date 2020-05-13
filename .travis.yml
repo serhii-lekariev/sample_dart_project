@@ -5,6 +5,7 @@ dart:
 
 before-install:
   - git clone https://github.com/flutter/flutter.git -b stable
+  - dir
   - flutter channel master
   - flutter upgrade
   - flutter config --enable-windows-desktop
