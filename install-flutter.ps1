@@ -4,3 +4,7 @@
 ./flutter/bin/flutter config --enable-windows-desktop
 echo "BUILDING FOR WINDOWS"
 ./flutter/bin/flutter build windows
+cd build
+dir
+cd windows
+dir
