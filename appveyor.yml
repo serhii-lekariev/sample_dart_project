@@ -1,0 +1,10 @@
+image: Visual Studio 2019
+
+install:
+  - cmd: git clone https://github.com/flutter/flutter.git -b stable
+  - cmd: ./flutter/bin/flutter channel master
+  - cmd: ./flutter/bin/flutter upgrade
+  - cmd: ./flutter/bin/flutter config --enable-windows-desktop
+  - cmd: ./flutter/bin/flutter doctor
+  - cmd: ./flutter/bin/flutter build windows
+  - cmd: dir
