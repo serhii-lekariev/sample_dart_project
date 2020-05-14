@@ -1,4 +1,4 @@
-choco install visualstudio2019-workload-nativedesktop
+choco install visualstudio2017-workload-nativedesktop
 ./flutter/bin/flutter doctor
 ./flutter/bin/flutter channel master
 ./flutter/bin/flutter upgrade
