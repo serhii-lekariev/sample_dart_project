@@ -3,5 +3,5 @@
 ./flutter/bin/flutter upgrade
 ./flutter/bin/flutter config --enable-windows-desktop
 ./flutter/bin/flutter doctor
-./flutter/bin/flutter build windows
+./flutter/bin/flutter build
 dir
