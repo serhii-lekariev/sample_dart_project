@@ -1,3 +1,4 @@
+vswhere
 choco install visualstudio2017-workload-nativedesktop
 ./flutter/bin/flutter doctor
 ./flutter/bin/flutter channel master
