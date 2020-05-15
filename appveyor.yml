@@ -14,7 +14,8 @@ for:
       - cmd: ./flutter/bin/flutter doctor
       - cmd: ./flutter/bin/flutter build windows
       - cmd: choco install advanced-installer
-      - cmd: dir /s
+      - cmd: cd build
+#      - cmd: dir /s
   - matrix:
       only:
         - image: macOS
