@@ -3,7 +3,7 @@ This repository showcases how to build a Flutter application for different deskt
 ### Summary
 1) Install Flutter.
 2) Run `flutter channel master` and `flutter upgrade`, as desktop requires the most recent Flutter version.
-3) Run `flutter config --enable-<your-platform-desktop>`.
+3) Run `flutter config --enable-<windows|macos|linux>-desktop`.
 4) Run `flutter doctor` and fix whatever complaints it has. It looks like this: 
 ```
 [X] Visual Studio - develop for Windows
@@ -17,7 +17,8 @@ This repository showcases how to build a Flutter application for different deskt
 ```
 Instructions are straightforward and following them lets you build desktop applications.
 
-After doing this, `flutter build <your-platform>` produces a native application:
+After doing this, `flutter build <windws|macos|linux>` produces a native application:
+
 A directory like this for Windows
 ```
  Directory of C:\projects\sample-dart-project\build\windows\x64\Release\Runner
