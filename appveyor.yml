@@ -27,4 +27,4 @@ for:
       - ./flutter/bin/flutter pub get
       - ./flutter/bin/flutter build macos
       - cd build
-      - ls -r
+      - ls -R
