@@ -27,6 +27,6 @@ for:
       - ./flutter/bin/flutter pub get
       - ./flutter/bin/flutter build macos
       - cd build/macos/Build/Products/Release
-      - brew install create-dmg
-      - create-dmg --app-drop-link "sample" "" sample.dmg ./sample_project.app
+      - npm install --global create-dmg
+      - create-dmg "sample" ./sample_project.app
       - ls -l

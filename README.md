@@ -2,6 +2,8 @@ This repository showcases how to build a Flutter application for different deskt
 Flutter only allows building for the host platform, i.e. macOS builds are only possible when building on macOS.
 Moreover, it requires the `macos` or `windows` folders, which can be found in this repo. 
 
+The location of the application installers on the CI machine is `$project-dir/build/macos/Build/Products/Release/sample.dmg`
+for macOS and TBD for windows.
 
 ### Summary
 1) Install Flutter.
