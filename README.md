@@ -1,4 +1,7 @@
 This repository showcases how to build a Flutter application for different desktop platforms.
+Flutter only allows building for the host platform, i.e. macOS builds are only possible when building on macOS.
+Moreover, it requires the `macos` or `windows` folders, which can be found in this repo. 
+
 
 ### Summary
 1) Install Flutter.
