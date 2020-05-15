@@ -8,3 +8,8 @@ install:
   - cmd: ./flutter/bin/flutter doctor
   - cmd: ./flutter/bin/flutter build windows
   - cmd: dir
+
+build_script:
+  - cmd: echo "Everything was built during the install step."
+  - cmd: cd build
+  - cmd: dir /s
