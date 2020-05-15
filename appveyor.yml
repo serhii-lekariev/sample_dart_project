@@ -13,14 +13,14 @@ for:
       - cmd: ./flutter/bin/flutter config --enable-windows-desktop
       - cmd: ./flutter/bin/flutter doctor
       - cmd: ./flutter/bin/flutter build windows
-      - cmd: cd build
+      - cmd: choco install advanced-installer
       - cmd: dir /s
   - matrix:
       only:
         - image: macOS
     build_script:
       - git clone https://github.com/flutter/flutter.git -b stable
-      - ./flutter/bin/flutter channel master
+      - ./flutter/bin/flutter channel masterr
       - ./flutter/bin/flutter config --enable-macos-desktop
       - sudo gem install cocoapods
       - ./flutter/bin/flutter doctor
@@ -28,5 +28,5 @@ for:
       - ./flutter/bin/flutter build macos
       - cd build/macos/Build/Products/Release
       - npm install --global create-dmg
-      - create-dmg "sample" ./sample_project.app
+      - create-dmg ./sample_project.app
       - ls -l
