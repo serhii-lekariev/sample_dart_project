@@ -6,16 +6,13 @@ for:
   - matrix:
       only:
         - image: Visual Studio 2019
-    install:
+    build_script:
       - cmd: git clone https://github.com/flutter/flutter.git -b stable
       - cmd: ./flutter/bin/flutter channel master
       - cmd: ./flutter/bin/flutter upgrade
       - cmd: ./flutter/bin/flutter config --enable-windows-desktop
       - cmd: ./flutter/bin/flutter doctor
       - cmd: ./flutter/bin/flutter build windows
-      - cmd: dir
-
-    build_script:
       - cmd: echo "Everything was built during the install step."
       - cmd: cd build
       - cmd: dir /s
