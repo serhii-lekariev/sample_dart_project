@@ -20,26 +20,11 @@ for:
       only:
         - image: macOS
     build_script:
-      - echo "I'm on macOS"
-      - ls -l
-
-#for:
-#
-#  -
-#    matrix:
-#      only:
-#        - job_name: <job name 1>
-#        [- job_group: <job name 1>] # optionally, you can define the configuration for the entire group
-#
-#    build_script:
-#      - echo Job 1
-#
-#  -
-#    matrix:
-#      only:
-#        - job_name: <job name 2>
-#
-#    build_script:
-#      - echo Job 2
-#
-#  ...
+      - git clone https://github.com/flutter/flutter.git -b stable
+      - ./flutter/bin/flutter channel master
+      - ./flutter/bin/flutter config --enable-macos-desktop
+      - ./flutter/bin/flutter doctor
+      - ./flutter/bin/flutter build macos
+      - echo "Everything was built during the install step."
+      - cd build
+      - ls -r
