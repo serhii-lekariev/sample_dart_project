@@ -13,7 +13,6 @@ for:
       - cmd: ./flutter/bin/flutter config --enable-windows-desktop
       - cmd: ./flutter/bin/flutter doctor
       - cmd: ./flutter/bin/flutter build windows
-      - cmd: echo "Everything was built during the install step."
       - cmd: cd build
       - cmd: dir /s
   - matrix:
@@ -25,7 +24,7 @@ for:
       - ./flutter/bin/flutter config --enable-macos-desktop
       - sudo gem install cocoapods
       - ./flutter/bin/flutter doctor
+      - ./flutter/bin/flutter pub get
       - ./flutter/bin/flutter build macos
-      - echo "Everything was built during the install step."
       - cd build
       - ls -r
