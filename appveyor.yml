@@ -17,8 +17,29 @@ for:
       - cmd: cd build
       - cmd: dir /s
   - matrix:
-    only:
-      - image: macOS
+      only:
+        - image: macOS
     build_script:
       - echo "I'm on macOS"
       - ls -l
+
+#for:
+#
+#  -
+#    matrix:
+#      only:
+#        - job_name: <job name 1>
+#        [- job_group: <job name 1>] # optionally, you can define the configuration for the entire group
+#
+#    build_script:
+#      - echo Job 1
+#
+#  -
+#    matrix:
+#      only:
+#        - job_name: <job name 2>
+#
+#    build_script:
+#      - echo Job 2
+#
+#  ...
