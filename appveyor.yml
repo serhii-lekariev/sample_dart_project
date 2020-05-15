@@ -23,6 +23,7 @@ for:
       - git clone https://github.com/flutter/flutter.git -b stable
       - ./flutter/bin/flutter channel master
       - ./flutter/bin/flutter config --enable-macos-desktop
+      - sudo gem install cocoapods
       - ./flutter/bin/flutter doctor
       - ./flutter/bin/flutter build macos
       - echo "Everything was built during the install step."
