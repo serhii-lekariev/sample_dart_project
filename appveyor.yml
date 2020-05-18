@@ -14,7 +14,7 @@ for:
       - cmd: ./flutter/bin/flutter doctor
       - cmd: ./flutter/bin/flutter build windows
       - cmd: choco install advanced-installer
-      - cmd: cd C:\Program Files (x86)\Caphyon\Advanced Installer 17.0\
+      - cmd: cd C:\Program Files (x86)\Caphyon\Advanced Installer 17.0\bin
       - cmd: dir
 #      - cmd: dir /s
   - matrix:
