@@ -14,10 +14,10 @@ for:
       - cmd: ./flutter/bin/flutter doctor
       - cmd: ./flutter/bin/flutter build windows
       - cmd: choco install advanced-installer
-      - cmd: "C:\Program Files (x86)\Caphyon\Advanced Installer 17.0\bin\x86\AdvancedInstaller.com" /newproject ./sample_app
-      - cmd: "C:\Program Files (x86)\Caphyon\Advanced Installer 17.0\bin\x86\AdvancedInstaller.com" /edit "sample_app" /SetProperty ProductName="Sample Application"
-      - cmd: "C:\Program Files (x86)\Caphyon\Advanced Installer 17.0\bin\x86\AdvancedInstaller.com" /edit "sample_app" /AddFolder APPDIR ./build/windows/x64/Release/Runner
-      - cmd: "C:\Program Files (x86)\Caphyon\Advanced Installer 17.0\bin\x86\AdvancedInstaller.com" /build ./sample_app
+      - cmd: start "" "C:\Program Files (x86)\Caphyon\Advanced Installer 17.0\bin\x86\AdvancedInstaller.com" /newproject ./sample_app
+      - cmd: start "" "C:\Program Files (x86)\Caphyon\Advanced Installer 17.0\bin\x86\AdvancedInstaller.com" /edit "sample_app" /SetProperty ProductName="Sample Application"
+      - cmd: start "" "C:\Program Files (x86)\Caphyon\Advanced Installer 17.0\bin\x86\AdvancedInstaller.com" /edit "sample_app" /AddFolder APPDIR ./build/windows/x64/Release/Runner
+      - cmd: start "" "C:\Program Files (x86)\Caphyon\Advanced Installer 17.0\bin\x86\AdvancedInstaller.com" /build ./sample_app
       - cmd: cd sample_app-SetupFiles
       - cmd: dir
   - matrix:
