@@ -3,7 +3,7 @@ Flutter only allows building for the host platform, i.e. macOS builds are only p
 Moreover, it requires the `macos` or `windows` folders, which can be found in this repo. 
 
 The location of the application installers on the CI machine is `$project-dir/build/macos/Build/Products/Release/sample.dmg`
-for macOS and `$project-dir\sample_app-SetupFiles` for windows.
+for macOS and `$project-dir\sample_app-SetupFiles` for Windows.
 
 The instructions that are used to build the installer can be found in the `appveyor.yml` file.
 
