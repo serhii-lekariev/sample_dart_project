@@ -14,14 +14,15 @@ for:
       - cmd: ./flutter/bin/flutter doctor
       - cmd: ./flutter/bin/flutter build windows
       - cmd: choco install advanced-installer
-      - cmd: cd build
+      - cmd: C:\Program Files (x86)\Caphyon\Advanced Installer 17.0\
+      - cmd: dir
 #      - cmd: dir /s
   - matrix:
       only:
         - image: macOS
     build_script:
       - git clone https://github.com/flutter/flutter.git -b stable
-      - ./flutter/bin/flutter channel masterr
+      - ./flutter/bin/flutter channel master
       - ./flutter/bin/flutter config --enable-macos-desktop
       - sudo gem install cocoapods
       - ./flutter/bin/flutter doctor
