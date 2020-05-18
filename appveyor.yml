@@ -16,6 +16,7 @@ for:
       - cmd: choco install advanced-installer
       - cmd: cd C:\Program Files (x86)\Caphyon\Advanced Installer 17.0\bin
       - cmd: dir
+      - cmd: advanced-installer
 #      - cmd: dir /s
   - matrix:
       only:
