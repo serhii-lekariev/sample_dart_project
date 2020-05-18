@@ -3,7 +3,9 @@ Flutter only allows building for the host platform, i.e. macOS builds are only p
 Moreover, it requires the `macos` or `windows` folders, which can be found in this repo. 
 
 The location of the application installers on the CI machine is `$project-dir/build/macos/Build/Products/Release/sample.dmg`
-for macOS and TBD for windows.
+for macOS and `$project-dir\sample_app-SetupFiles` for windows.
+
+The instructions that are used to build the installer can be found in the `appveyor.yml` file.
 
 ### Summary
 1) Install Flutter.
@@ -62,3 +64,9 @@ I have chosen to use Appveyor, because of its Windows support.
 
 Namely, it provides a `Visual Studio 2019` image. Windows builds require Visual Studio and its additional components: MSBuild, MSVC v142 - VS 2019 C++ x64/x86 build tools and Windows 10 SDK (10.0.17763.0).
 
+### Notes on installer creation tools
+
+For macOS, a script from the [create-dmg](https://github.com/sindresorhus/create-dmg) NPM package was used. It is MIT licensed.
+
+For Windows, an [Advanced Installer](https://chocolatey.org/packages/advanced-installer) choco package was used. Its free version is 
+enough to create a necessary installer.
