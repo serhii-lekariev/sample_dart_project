@@ -62,7 +62,8 @@ See https://github.com/flutter/flutter/issues/38477 for details and updates.
 ### Notes on CI choice
 I have chosen to use Appveyor, because of its Windows support.
 
-Namely, it provides a `Visual Studio 2019` image. Windows builds require Visual Studio and its additional components: MSBuild, MSVC v142 - VS 2019 C++ x64/x86 build tools and Windows 10 SDK (10.0.17763.0).
+Namely, it provides a `Visual Studio 2019` image out of the box. Windows builds require Visual Studio and its additional components: MSBuild, MSVC v142 - VS 2019 C++ x64/x86 build tools and Windows 10 SDK (10.0.17763.0).
+Using Travis with Windows requires more effort, same goes for GitHub Actions CI.
 
 ### Notes on installer creation tools
 
